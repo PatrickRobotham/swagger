@@ -32,7 +32,7 @@
 plumber_docs <- function() {
   list(
     name = "swagger",
-    index = function(version = "3", ...) {
+    index = function(version = "5", ...) {
       swagger_spec(
         api_path = paste0(
           "window.location.origin + ",
@@ -51,7 +51,7 @@ plumber_docs <- function() {
         version = version
       )
     },
-    static = function(version = "3", ...) {
+    static = function(version = "5", ...) {
       swagger_path(version)
     }
   )
